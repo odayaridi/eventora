@@ -36,6 +36,25 @@ const bookingValidator = {
     body("eventId")
         .isInt({ min: 1 })
         .withMessage("Invalid event ID")
+],
+
+
+isEventBookedByAttendeeValidator: [
+    query("userId")
+        .isInt({ min: 1 })
+        .withMessage("Invalid user ID"),
+
+    query("eventId")
+        .isInt({ min: 1 })
+        .withMessage("Invalid event ID")
+
+],
+
+
+isEventFullValidator: [
+    query("eventId")
+        .isInt({ min: 1 })
+        .withMessage("Invalid event ID")
 
 ],
 
