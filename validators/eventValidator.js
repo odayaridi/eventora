@@ -43,6 +43,10 @@ const eventValidator = {
         .isInt({ min: 1 })
         .withMessage("Invalid event ID"),
 
+    body("userId")
+        .isInt({ min: 1 })
+        .withMessage("Invalid user ID"),
+
     body("title")
         .notEmpty()
         .withMessage("Title cannot be empty"),

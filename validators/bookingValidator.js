@@ -19,14 +19,12 @@ const bookingValidator = {
 
     ],
 
-
     fetchAttendeeBookingsValidator: [
         param("userId")
             .isInt({ min: 1 })
             .withMessage("Invalid user ID")
 
     ],
-
 
     deleteBookingValidator: [
     body("userId")

@@ -22,11 +22,4 @@ router.put(
 
 
 
-router.delete(
-    "/delete/:userId",
-    userValidator.deleteUserValidator,
-    validateRequest,
-    userController.deleteUserController
-);
-
 module.exports = router;

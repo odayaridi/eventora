@@ -40,22 +40,6 @@ const userController = {
 
 
 
-deleteUserController: async (req, res, next) => {
-    try {
-
-        const result = await userService.deleteUserService(req.params.userId);
-
-        res.status(200).json({
-            success: true,
-            statusCode: 200,
-            data: result
-        });
-
-    } catch (error) {
-        next(error);
-    }
-},
-
 };
 
 module.exports = userController;

@@ -1,10 +1,9 @@
+const Booking = require("../models/Booking");
+const sequelize = require("../config/db");
 const Event = require("../models/Event");
 const EventImage = require("../models/EventImage");
 const User = require("../models/User");
 const HttpError = require("../utils/HttpError");
-
-
-
 
 const eventService = {
 

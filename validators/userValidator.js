@@ -46,12 +46,6 @@ const userValidator = {
 
 
 
-    deleteUserValidator: [
-        param("userId")
-            .isInt({ min: 1 })
-            .withMessage("Invalid user ID")
-    ],
-
 
 
     fetchOrganizerEventsValidator: [

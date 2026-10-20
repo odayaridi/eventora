@@ -85,19 +85,6 @@ const userService = {
     },
 
 
-    deleteUserService: async (userId) => {
-
-        const user = await User.findByPk(userId);
-
-        if (!user) {
-            throw new HttpError("User not found", 404);
-        }
-
-        await user.destroy();
-
-        return { message: "User deleted successfully" };
-    },
-
 
 };
 

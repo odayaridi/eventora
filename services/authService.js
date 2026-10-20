@@ -4,8 +4,7 @@ const HttpError = require("../utils/HttpError");
 
 const authService = {
 
-    registerService: async (userData) => {
-
+    registerUserService: async (userData) => {
     const {
         firstName,
         lastName,
